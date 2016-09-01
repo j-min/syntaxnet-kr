@@ -6,14 +6,14 @@ import os
 [1] Main Function
 """
 def main():
-    directory = os.getcwd() + '/InputData'
+    directory = os.getcwd() + '/InputDataType1'
     filename = 'BTHO0437.txt'
     filename = os.path.join(directory, filename)
 
     f = open(filename, 'r', encoding='utf-16')
     is_inside = False
     line_counter = 0
-    OUT_FILENAME = "OutputData\kr-ud-dev.conllu"
+    OUT_FILENAME = "OutputDataType1\kr-ud-dev.conllu"
 
     with codecs.open(OUT_FILENAME, "w", "utf-8") as file:
         """
